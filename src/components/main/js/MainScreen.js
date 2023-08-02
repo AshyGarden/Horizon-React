@@ -13,7 +13,7 @@ const MainScreen = () => {
       <CSHeader />
       <div className="MainMenu">
         <div className="BigBtn">
-          <Link to="/News" style={{ width: "550px", height: "800px" }}>
+          <Link to="/News" style={{ width: "550px", height: "720px" }}>
             <div className="NewsMenu">
               <button className="News-main-btn">News</button>
               <img
@@ -23,7 +23,7 @@ const MainScreen = () => {
               ></img>
             </div>
           </Link>
-          <Link to="/SolarSystem" style={{ width: "550px", height: "800px" }}>
+          <Link to="/SolarSystem" style={{ width: "550px", height: "720px" }}>
             <div className="solarMenu">
               <button className="Solar-main-btn">SolarSystem</button>
               <img
@@ -33,7 +33,7 @@ const MainScreen = () => {
               />
             </div>
           </Link>
-          <Link to="/Store" style={{ width: "550px", height: "800px" }}>
+          <Link to="/Store" style={{ width: "550px", height: "720px" }}>
             <div className="storeMenu">
               <button className="store-main-btn">Store</button>
               <img

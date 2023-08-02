@@ -31,6 +31,7 @@ $ npm install three // 3D
 $ npm install camera-controls // 카메라 시점
 $ npm install @mdi/react
 $ npm install react-daum-postcode
+$ npm install react-js-pagination
 ```
 
 Sprint1 finish

@@ -3,6 +3,11 @@
     src: url("../../../../public/assets/fonts/Orbitron-Bold.woff2");
     font-style: normal;
  }
+ 
+ .main-wrapper {
+    width: 100%;
+    background: url("../../layout/img/background1.jpg");
+ }
 
 //전체 영역
 .MainMenu {
@@ -11,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    //background-color: black;
 
 
    //큰 메뉴 버튼(Solar, News)

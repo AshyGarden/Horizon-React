@@ -12,8 +12,6 @@ body {
     height: 100%;
 }
 
-//검색창
-
 //테이블 세부사항
 .News-board {
     text-align: center;
@@ -30,6 +28,7 @@ body {
             font-family: 'Orbitron-Bold' !important;
             font-size: 15px;
         }
+
 
         thead,tr,td {
             padding: 2%;
@@ -49,7 +48,7 @@ body {
     
         
         #News-tbody:nth-child(even) {
-            background-color: #ffffff;
+            background-color: #e2e2e2;
             color: #1976d2;
         }
 
@@ -65,9 +64,6 @@ body {
 }
 
 //각 테이블 속성 (가로 크기 조정)
-.td-photo {
-    width: 400px;
-}
 
 .td-title {
     font-size: 17px;
@@ -77,4 +73,20 @@ body {
     width: 150px;
 }
 
+//mui select 설정
+#demo-simple-select-helper-label {
+    color: white;
+    font-family: "Orbitron-Bold";
+}
 
+#demo-simple-select-helper {
+    color: white;
+    font-family: "Orbitron-Bold";
+}
+
+// //mui Button 
+.select-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

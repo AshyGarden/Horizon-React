@@ -71,3 +71,21 @@ body {
 .td-date {
     width: 150px;
 }
+
+//mui select 설정
+#demo-simple-select-helper-label {
+    color: white;
+    font-family: "Orbitron-Bold";
+}
+
+#demo-simple-select-helper {
+    color: white;
+    font-family: "Orbitron-Bold";
+}
+
+// //mui Button 
+.select-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

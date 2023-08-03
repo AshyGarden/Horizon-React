@@ -6,6 +6,7 @@ import { API_BASE_URL as BASE, USER } from "../../../config/host-config";
 import { AuthContext } from "../../../util/AuthContext";
 import { useNavigate } from "react-router-dom";
 import HeaderSolar from "../../solarsystem/js/HeaderSolar";
+import PageHeader from "../../layout/js/PageHeader";
 
 const Login = () => {
   const redirection = useNavigate();
@@ -53,7 +54,7 @@ const Login = () => {
     onLogin(token, email);
 
     // 홈으로 리다이렉트
-    redirection("/");
+    redirection("/main");
   };
 
   //로그인 요청 핸들러
@@ -72,7 +73,7 @@ const Login = () => {
   return (
     <>
       <div className='login-wrapper'>
-        <HeaderSolar />
+        <PageHeader />
         <Container
           component='main'
           maxWidth='xs'

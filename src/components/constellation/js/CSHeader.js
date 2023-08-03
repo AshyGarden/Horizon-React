@@ -12,7 +12,7 @@ import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import Icon from "@mdi/react";
-import { mdiAccount, mdiLock, mdiLockOpen } from "@mdi/js";
+import { mdiAccount, mdiBasket, mdiLock, mdiLockOpen } from "@mdi/js";
 import "../scss/CSHeader.scss";
 import "../../solarsystem/img/Tip001Blue.png";
 import { useTheme } from "@emotion/react";
@@ -91,21 +91,13 @@ export default function SearchAppBar() {
     >
       <div className="CSHeader">
         <Toolbar className="header-menubar">
-          <IconButton
-            className="hamburger"
-            //size="small"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{
-              mr: 2,
-              marginLeft: "20px",
-              color: "white",
-            }}
-            fontcolor="white"
-          >
-            <MenuIcon />
-          </IconButton>
+          <Link to="/">
+            <img
+              src={"/final-logo-removebg.png"}
+              alt="logo"
+              style={{ width: "80px", height: "80px" }}
+            />
+          </Link>
           <Typography
             className="typography-cs"
             variant="h5"
@@ -139,7 +131,7 @@ export default function SearchAppBar() {
               <Icon
                 className="locked"
                 path={mdiLock}
-                title="lock"
+                title="LOGIN"
                 size={2}
                 horizontal
                 vertical
@@ -154,7 +146,18 @@ export default function SearchAppBar() {
                 <Icon
                   className="profile-icon"
                   path={mdiAccount}
-                  title="User Profile"
+                  title="MYPAGE"
+                  size={2}
+                  horizontal
+                  vertical
+                  rotate={180}
+                />
+              </Link>
+              <Link to="/basket">
+                <Icon
+                  className="shop-basket"
+                  path={mdiBasket}
+                  title="BASKET"
                   size={2}
                   horizontal
                   vertical
@@ -165,7 +168,7 @@ export default function SearchAppBar() {
                 <Icon
                   className="lock-open"
                   path={mdiLockOpen}
-                  title="lockOpen"
+                  title="LOGOUT"
                   size={2}
                   horizontal
                   vertical

@@ -14,8 +14,8 @@ const BasketModal = ({ open, setOpen, handleOpen, selectedItem }) => {
     <Modal
       open={open}
       onClose={handleOpen}
-      aria-labelledby="modal-title"
-      aria-describedby="modal-description"
+      aria-labelledby='modal-title'
+      aria-describedby='modal-description'
       sx={{ border: "none" }}
     >
       <Box
@@ -53,11 +53,11 @@ const BasketModal = ({ open, setOpen, handleOpen, selectedItem }) => {
           X
         </Button>
 
-        <Box className="modal-md-img" sx={{ textAlign: "center", mt: 3 }}>
-          <img src="#" alt=""></img>
+        <Box className='modal-md-img' sx={{ textAlign: "center", mt: 3 }}>
+          <img src={"assets/img/" + name + ".jpg"} alt='이미지입니다' />
         </Box>
 
-        <Typography variant="body1" id="modal-description" sx={{ mt: 3 }}>
+        <Typography variant='body1' id='modal-description' sx={{ mt: 3 }}>
           {content}
         </Typography>
       </Box>

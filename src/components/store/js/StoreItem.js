@@ -20,7 +20,7 @@ const StoreItem = ({ open, item }) => {
             sx={{ position: "absolute", top: 30, left: 50, paddingTop: 3 }}
           >
             <img
-              src={require("../img/" + name + ".jpg")}
+              src={"assets/img/" + name + ".jpg"}
               alt='이미지입니다'
               onClick={handleClick}
             />

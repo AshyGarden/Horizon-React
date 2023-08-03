@@ -88,8 +88,8 @@ const StoreModal = ({ open, setOpen, item }) => {
   return (
     <Modal
       open={open}
-      aria-labelledby="modal-title"
-      aria-describedby="modal-description"
+      aria-labelledby='modal-title'
+      aria-describedby='modal-description'
       sx={{ border: "none" }}
     >
       <Box
@@ -121,21 +121,21 @@ const StoreModal = ({ open, setOpen, item }) => {
           X
         </Button>
         <Typography
-          variant="h6"
-          id="modal-title"
+          variant='h6'
+          id='modal-title'
           gutterBottom
           sx={{ color: "black" }}
         >
           {name}
         </Typography>
 
-        <Box className="modal-md-img" sx={{ textAlign: "center", mt: 3 }}>
-          <img src="#" alt=""></img>
+        <Box className='modal-md-img' sx={{ textAlign: "center", mt: 3 }}>
+          <img src={"assets/img/" + name + ".jpg"} alt='이미지입니다' />
         </Box>
 
         <Typography
-          variant="body1"
-          id="modal-description"
+          variant='body1'
+          id='modal-description'
           sx={{ mt: 3, color: "black" }}
         >
           {content}
@@ -150,14 +150,14 @@ const StoreModal = ({ open, setOpen, item }) => {
           }}
         >
           <Button
-            variant="outlined"
+            variant='outlined'
             sx={{ mr: 2, width: 150, height: 60, fontSize: 20 }}
             onClick={purchaseHandle}
           >
             바로구매
           </Button>
           <Button
-            variant="contained"
+            variant='contained'
             sx={{ width: 150, height: 60, fontSize: 20 }}
             onClick={addToCartHandle}
           >

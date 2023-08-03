@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import HeaderSolar from "../../solarsystem/js/HeaderSolar";
 import BasketItem from "./BasketItem";
 import BasketModal from "./BasketModal";
 import "../scss/basket.scss";
@@ -21,7 +20,7 @@ import { useNavigate } from "react-router-dom";
 import { getLoginUserInfo } from "../../../util/login-utils";
 import { AuthContext } from "../../../util/AuthContext";
 import PayModal from "./PayModal";
-import { BorderBottom } from "@mui/icons-material";
+import PageHeader from "../../layout/js/PageHeader";
 
 const Basket = () => {
   // 로그인 인증 토큰 얻어오기
@@ -245,21 +244,21 @@ const Basket = () => {
 
   return (
     <>
-      <div className="basket-wrapper">
-        <HeaderSolar />
+      <div className='basket-wrapper'>
+        <PageHeader />
 
-        <Typography variant="h4" align="center" marginTop={5}>
+        <Typography variant='h4' align='center' marginTop={5}>
           장바구니
         </Typography>
         <Container
-          component="main"
-          className="basket-main-wrapper"
+          component='main'
+          className='basket-main-wrapper'
           sx={{ padding: "50px", display: "flex" }}
           style={{ marginTop: "30px" }}
         >
           <Grid container spacing={4}>
             <Box
-              className="list-box"
+              className='list-box'
               sx={{
                 width: "90%",
                 maxWidth: "900px",
@@ -279,17 +278,17 @@ const Basket = () => {
               >
                 <TableHead>
                   <TableRow sx={{ align: "center" }}>
-                    <TableCell align="center" style={{ width: "20%" }}>
+                    <TableCell align='center' style={{ width: "20%" }}>
                       상품
                     </TableCell>
-                    <TableCell align="center" style={{ width: "20%" }}>
+                    <TableCell align='center' style={{ width: "20%" }}>
                       가격
                     </TableCell>
-                    <TableCell align="center" style={{ width: "15%" }}>
+                    <TableCell align='center' style={{ width: "15%" }}>
                       수량
                     </TableCell>
                     <TableCell
-                      align="center"
+                      align='center'
                       style={{ width: "10%" }}
                     ></TableCell>
                   </TableRow>
@@ -309,7 +308,7 @@ const Basket = () => {
               </Table>
             </Box>
             <Box
-              className="cal-pay-wrapper"
+              className='cal-pay-wrapper'
               sx={{
                 marginTop: "20px",
                 position: "fixed",
@@ -325,7 +324,7 @@ const Basket = () => {
               }}
             >
               <Box
-                className="calculate-box"
+                className='calculate-box'
                 sx={{
                   padding: "10px",
                 }}
@@ -336,8 +335,8 @@ const Basket = () => {
               </Box>
 
               <Button
-                className="payment-btn"
-                variant="contained"
+                className='payment-btn'
+                variant='contained'
                 sx={{
                   width: 100,
                   height: 40,
